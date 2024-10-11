@@ -55,3 +55,7 @@ function check() {
         alert("Wrong credentials");
     }
 }
+function clear() {
+    email.value = "";
+    password.value = "";
+}
