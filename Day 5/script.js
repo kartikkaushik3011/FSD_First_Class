@@ -44,20 +44,14 @@ const ops = "1234";
 const result = document.getElementById("result");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-let em = "";
-letpw = "";
-email.addEventListener("onChange", function (e) {
-    em = em + e.target;
-});
-password.addEventListener("onChange", function (e) {
-    pw = pw + e.target;
-});
 
 function check() {
+    let em = email.value;
+    let pw = password.value;
     if (em === oemail && pw === ops) {
-        result.innerText = "Welcome Admin";
+        alert("Welcome admin");
     }
     else {
-        result.innerText = "Wrong password";
+        alert("Wrong credentials");
     }
 }
